@@ -7,6 +7,8 @@ const router = express.Router()
 router.get("/", (req, res)=>{
     res.send("welcome to the homepage")
 })
+
+
 router.get("/allUser",getAlluser)
 router.get("/allBlogs",getAllblog)
 router.get("/oneUser", getOneuser)
