@@ -1,8 +1,9 @@
 const dev = require("./config");
 const mongoose = require("mongoose")
 
-const url = dev.db_url;
+// const url = dev.db_url 
 
+const url = "mongodb://localhost:27017";
 
 mongoose.connect(url)
 .then(()=>{
