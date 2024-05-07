@@ -10,7 +10,7 @@ const getAlluser = (req, res) => {
 
 const getAllblog = async(req, res) => {
     const allBlogs = await Blog.find({})
-    res.send(allBlogs)
+    res.status(200).send(allBlogs)
 }
 
 
