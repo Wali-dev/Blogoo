@@ -1,17 +1,18 @@
 import Link from "next/link"
+import { PiNotePencilBold } from "react-icons/pi";
 
 const NavBar = () => {
   return (
     <div className="min-h-[60px] mx-4 navbar flex justify-between">
       <div>
-        <div className="flex-1 gap-x-6">
+        <div className="flex-1 gap-x-9">
           <Link href={"/"} className="btn btn-ghost text-xl">Blogoo</Link>
           <input type="text" placeholder="Search" className="input input-sm input-bordered w-24 md:w-auto" />
         </div>
       </div>
       <div className="gap-x-4">
         <div className="hidden sm:block">
-          <button className="btn"><Link href={"/post"}>Write</Link></button>
+          <button className="btn"><Link href={"/post"} className="flex gap-x-1"> <PiNotePencilBold />Write</Link></button>
         </div>
         <div className="hidden sm:block">
           <button className="btn btn-sm btn-ghost"><Link href={"/signin"}>Sign In</Link></button>
