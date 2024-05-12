@@ -20,8 +20,8 @@ const LatestBlog = () => {
                     />
                 </div>
                 <div className="">
-                    <h2 className="card-title my-3 text-3xl">{latest.title}</h2>
-                    <p className='text-gray-400 mb-2 sm:max-w-[32.2rem] '>{latest.full_blog.substring(0, 80)}...</p>
+                    <h2 className="card-title my-1 text-3xl">{latest.title}</h2>
+                    <p className='text-gray-400 mb-8 sm:max-w-[32.2rem] '>{latest.full_blog.substring(0, 80)}...</p>
                     <div>
                         <div className='text-orange-400 text-sm'>{latest.author_name}</div>
                         <div className='text-xs text-gray-400'>{DateFormatChanger(latest.created_at)}</div>

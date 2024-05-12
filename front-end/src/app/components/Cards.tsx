@@ -14,7 +14,7 @@ const Cards = () => {
                             <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt={blog.title}/></figure>
                             <div className="">
                                 <h2 className="card-title my-3">{blog.title}</h2>
-                                <p className='text-gray-400 mb-2'>{blog.full_blog.substring(0, 80)}...</p>
+                                <p className='text-gray-400 mb-4'>{blog.full_blog.substring(0, 80)}...</p>
                                 <div>
                                     <div className='text-orange-400 text-sm'>{blog.author_name}</div>
                                     <div className='text-xs text-gray-400'>{DateFormatChanger(blog.created_at)}</div>
