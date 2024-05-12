@@ -1,6 +1,6 @@
 import fakedata from '@/app/Data/fakedata.json';
 import Image from 'next/image';
-import DateFormatChanger from '../utils/DateFormatChanger';
+import DateFormatChanger from '../functions/DateFormatChanger';
 const blogs = fakedata.blog_posts.slice(0, 3); //took only three from the array
 
 const Cards = () => {

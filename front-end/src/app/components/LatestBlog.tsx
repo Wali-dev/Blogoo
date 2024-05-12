@@ -1,12 +1,11 @@
 import fakedata from '@/app/Data/fakedata.json';
 import Image from 'next/image';
-import DateFormatChanger from '../utils/DateFormatChanger';
+import DateFormatChanger from '../functions/DateFormatChanger';
 const blogs = fakedata.blog_posts;
 
 
 //getting the last blog
 const len = blogs.length
-
 const latest = blogs[len - 1]
 
 const LatestBlog = () => {
