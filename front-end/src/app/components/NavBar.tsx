@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { PiNotePencilBold } from "react-icons/pi";
 
+
 const NavBar = () => {
   return (
     <div className="min-h-[60px] px-4 navbar flex justify-between w-auto">
@@ -18,7 +19,7 @@ const NavBar = () => {
           <button className="btn btn-sm btn-ghost"><Link href={"/signin"}>Sign In</Link></button>
         </div>
         <div className="hidden sm:block">
-          <button className="btn btn-sm btn-outline btn-orange-400"><Link href={"/signup"}>Sign Up</Link></button>
+          <button className="btn btn-sm btn-outline btn-orange-400"><Link href={'/signup'}>Sign Up</Link></button>
         </div>
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">
